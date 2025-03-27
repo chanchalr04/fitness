@@ -1,0 +1,327 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fitness</title>
+
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+
+    <!-- AOS CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css" rel="stylesheet">
+
+    <!-- AOS JS -->
+    <script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+        integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <!-- CSS File -->
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+   <!-- Top Navbar -->
+<div class="top-navbar">
+    <div class="container-fluid">
+        <div class="d-flex justify-content-between align-items-center flex-wrap py-2">
+            <!-- Contact Info -->
+            <div class="d-flex flex-wrap gap-3">
+                <a href="tel:+1234567890" class="text-nowrap small">📞 +123 456 7890</a>
+                <a href="mailto:info@fitnessgym.com" class="text-nowrap small">✉️ info@fitnessgym.com</a>
+            </div>
+            <!-- Pay Online Button -->
+            <button class="btn pay-btn btn-sm text-nowrap">
+                <i class="fa-solid fa-sack-dollar"></i> Pay Online
+            </button>
+        </div>
+    </div>
+</div>
+
+<!-- Main Navbar -->
+<nav class="navbar navbar-expand-lg main-navbar sticky-top">
+    <div class="container-fluid px-3">
+        <!-- Logo -->
+        <a class="navbar-brand" href="#">
+            <img src="./img/red.png" class="logo" alt="Logo">
+        </a>
+        
+        <!-- Mobile Toggle -->
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        
+        <!-- Navbar Content -->
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav mx-auto">
+                <li class="nav-item"><a class="nav-link" href="#home">Home</a></li>
+                <li class="nav-item"><a class="nav-link" href="#courses">Courses</a></li>
+                <li class="nav-item"><a class="nav-link" href="#fitness">Fitness</a></li>
+                <li class="nav-item"><a class="nav-link" href="#gallery">Gallery</a></li>
+                <li class="nav-item"><a class="nav-link" href="#pricing">Price</a></li>
+                <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
+            </ul>
+            
+            <a href="#popup-form" class="btn btn-dark hero-btn ms-lg-3">Book Consultation</a>
+        </div>
+    </div>
+</nav>
+                <!-- Popup Form -->
+                <div id="popup-form" class="form-overlay">
+                    <div class="form-container">
+                        <a href="#" class="close-btn">&times;</a>
+                        <h1> <span class="red">Choose Your</span> Plan</h1>
+                        <form>
+                            <!-- First Name -->
+                            <label for="first-name"></label>
+                            <input type="text" id="first-name" name="first-name" placeholder="First Name" required>
+
+                            <!-- Last Name -->
+                            <input type="text" id="last-name" name="last-name" placeholder="Last Name" required>
+
+                            <!-- Mobile Number -->
+
+                            <input type="tel" id="mobile" name="mobile" pattern="[0-9]{10}"
+                                placeholder="10-digit number" required>
+
+                            <!-- Email -->
+
+                            <input type="email" id="email" name="email" placeholder="Email" required>
+
+                            <!-- (Radio Buttons) -->
+                            <label>Choose Your Training Type</label>
+                            <div class="training">
+                                <label><input type="radio" name="training" value="Master Training" required> Master
+                                    Training</label>
+                                <label><input type="radio" name="training" value="Transformation" required>
+                                    Transformation</label>
+
+                            </div>
+
+                            <!-- Submit Button -->
+                            <button type="submit" class="btn-submit">Submit</button>
+                        </form>
+                    </div>
+                </div>
+
+
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero-section" id="home">
+        <div class="container">
+            <div class="row align-items-center background-img">
+                <!-- Headings and link Button -->
+                <div class="col-md-6">
+                    <div class="container text  mt-5">
+                        <h1>Transform</h1>
+                        <h1 id="typing-text" class="typing t-text" style="color:black"></h1>
+                        <h2>Join our fitness programs and achieve your goals.</h2>
+                    </div>
+                   
+
+                    <a href="#courses" class="btn btn-dark">BOOK CONSULTAION</a>
+                </div>
+
+                <!-- Image -->
+                <div class="col-md-6 background-img2">
+                    <img src="/img/img3.png" alt="Fitness Image">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Courses Section -->
+    <section id="courses" class="courses-section">
+        <div class="container">
+            <h2>Popular Fitness Courses</h2>
+            <div class="row">
+                <!-- Card 1 -->
+                <div class="col-md-4 mb-4">
+                    <div class="card left text-center p-4">
+                        <i class="fas fa-dumbbell"></i>
+                        <h3>Strength Training</h3>
+                        <p>Build muscle and increase strength with our expert-led strength training programs.</p>
+                    </div>
+                </div>
+                <!-- Card 2 -->
+                <div class="col-md-4 mb-4">
+                    <div class="card right text-center p-4">
+                        <i class="fas fa-heartbeat"></i>
+                        <h3>Cardio Blast</h3>
+                        <p>Boost your endurance and burn calories with high-intensity cardio workouts.</p>
+                    </div>
+                </div>
+                <!-- Card 3 -->
+                <div class="col-md-4 mb-4">
+                    <div class="card left text-center p-4">
+                        <i class="fas fa-yin-yang"></i>
+                        <h3>Yoga & Meditation</h3>
+                        <p>Relax your mind and body with our yoga and meditation sessions.</p>
+                    </div>
+                </div>
+                <!-- Card 4 -->
+                <div class="col-md-4 mb-4">
+                    <div class="card right text-center p-4">
+                        <i class="fas fa-running"></i>
+                        <h3>HIIT Workouts</h3>
+                        <p>Get maximum results in minimum time with our high-intensity interval training.</p>
+                    </div>
+                </div>
+                <!-- Card 5 -->
+                <div class="col-md-4 mb-4">
+                    <div class="card left text-center p-4">
+                        <i class="fas fa-utensils"></i>
+                        <h3>Nutrition Plans</h3>
+                        <p>Customized nutrition plans to complement your fitness journey.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Fitness Section -->
+    <section id="fitness" class="fitness-section">
+        <div class="heading">
+            <h2>Get Fit with Personal Fitness Trainer</h2>
+        </div>
+        <!-- Image-->
+        <div class="fit-content">
+            <div class="image-container">
+                <img src="/img/floatman.png" alt="Fitness Image" id="fitness-image">
+            </div>
+            <!-- Content -->
+            <div class="content">
+                <p>
+                    Achieve your fitness goals with our expert personal trainers. Whether you're looking to lose weight,
+                    build muscle, or improve your overall health, we have the right program for you.
+                </p>
+                <p>
+                    Our trainers will create a personalized workout plan and provide you with the motivation and
+                    guidance you need to succeed.
+                </p>
+                <p>
+                    Our goal is to help you transform your body and live a healthier, happier life.
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Fitness Gallery Section -->
+    <section id="gallery" class="gallery-section">
+        <div class="heading">
+            <h2>Fitness Gallery</h2>
+        </div>
+
+        <div class="img-container">
+            <img src="/img/man1.jfif" alt="" class="img-card" data-aos="flip-up">
+            <img src="/img/man10.jfif" alt="" class="img-card" data-aos="flip-left">
+            <img src="/img/man15.jfif" alt="" class="img-card" data-aos="flip-right">
+            <img src="/img/man12.jfif" alt="" class="img-card" data-aos="flip-down">
+            <img src="/img/man7.jfif" alt="" class="img-card" data-aos="flip-up">
+            <img src="/img/man3.jfif" alt="" class="img-card" data-aos="flip-left">
+            <img src="/img/man4.jfif" alt="" class="img-card" data-aos="flip-right">
+            <img src="/img/man6.jfif" alt="" class="img-card" data-aos="flip-down">
+            <img src="/img/man8.jfif" alt="" class="img-card" data-aos="fflip-up">
+            <img src="/img/man11.jfif" alt="" class="img-card" data-aos="flip-down">
+            <img src="/img/man14.jfif" alt="" class="img-card" data-aos="flip-right">
+            <img src="/img/man13.jfif" alt="" class="img-card" data-aos="flip-left">
+            <img src="/img/man2.jfif" alt="" class="img-card" data-aos="flip-up">
+            <img src="/img/man5.jfif" alt="" class="img-card" data-aos="flip-down">
+        </div>
+    </section>
+    <!-- load more button -->
+    <div class="load-more" style="text-align: center;">
+        <a href="#home" class="btn" data-aos="zoom-in">Load more</a>
+    </div>
+    <!-- pricing section -->
+    <section id="pricing" class="pricing-section">
+        <div class=" price-container ">
+            <h1>Choose Your Pricing Plan</h1>
+            <h3>100% Guaranteed Result if not 100% Refund</h3>
+        </div>
+        <div class="price-cards-container">
+            <!-- Master Training Card -->
+            <div class="price-card" data-aos="zoom-in">
+                <h2>Master Training</h2>
+
+                <h3>₹ 11999/-</h3>
+                <p><strong>Starting</strong></p>
+                <ul>
+                    <li>Personalized Workout Routines</li>
+                    <hr>
+                    <li>Expert Guidance</li>
+                    <hr>
+                    <li>Top 10 Ranking Guarantee</li>
+                    <hr>
+                    <li>Progress Tracking & Feedback</li>
+                </ul>
+                <button class="select-btn"> <a href="#popup-form">Select</a></button>
+            </div>
+
+            <!-- Transformation Card -->
+            <div class="price-card"data-aos="zoom-in">
+                <h2>Transformation</h2>
+                <h3>₹ 17999/-</h3>
+                <p><strong>Starting</strong></p>
+                <ul>
+                    <li>Customized Workout Regimen</li>
+                    <hr>
+                    <li>Personalized Diet Plan</li>
+                    <hr>
+                    <li>One-on-One Coaching</li>
+                    <hr>
+                    <li>Progress Monitoring & Analysis</li>
+                </ul>
+                <button class="select-btn"> <a href="#popup-form">Select</a></button>
+
+            </div>
+        </div>
+    </section>
+    <section id="contact" class="footer-section">
+        <!-- Contact Form -->
+        <div class="footer-form" data-aos="slide-right">
+            <h2>Have Questions? Reach Out To Us</h2>
+            <input type="text" placeholder="First Name" />
+            <input type="text" placeholder="Last Name" />
+            <input type="email" placeholder="Email Address" />
+            <input type="text" placeholder="Subject" />
+            <textarea placeholder="Your Message"></textarea>
+            <button type="submit">Submit</button>
+        </div>
+
+        <!--  SVG Circle -->
+        <div class="footer"data-aos="zoom-in">
+            <svg height="100" width="100">
+                <circle cx="50" cy="50" r="40" stroke="#fff" stroke-width="2" fill="#f00" />
+            </svg>
+        </div>
+
+
+
+        <!-- footer text content -->
+        <div class="footer-right" data-aos="slide-left">
+            <p>© 2025 Fitness Gym. All Rights Reserved by CR.</p>
+            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Corrupti, ad soluta! Error nostrum nisi
+                mollitia in veniam, quis, saepe assumenda rerum illum dicta explicabo nemo velit incidunt similique
+                reiciendis laborum praesentium autem hic placeat aut repellat quia? Quasi molestiae facere ratione,
+                deleniti, sequi quia iusto adipisci, voluptatibus ab suscipit harum?</p>
+        </div>
+    </section>
+
+
+    <!-- Bootstrap JS (for toggling navbar on mobile) -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="script.js"></script>
+</body>
+
+</html>
