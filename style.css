@@ -207,7 +207,7 @@ input {
    text-align: left;
 }
 .background-img{
-   background-image: url('/img/img1.png');
+   background-image: url('./img/img1.png');
    background-repeat: no-repeat;
    margin-top: 10px;
 }
